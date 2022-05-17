@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+#container {
+    width: fit-content;
+    height: auto;
+}
+
+#hamburger-icon {
+    border: none;
+}
+
+#hamburger-button {
+    background-color: white;
+    border: none;
+}
+
+.h-button {
+    display: block;
+    width: 26px;
+    height: 6px;
+    margin: 4px auto;
+    border-radius: 3px;
+    background-color:black;
+}
+
+#header-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+}
+
+#header-content h1 {
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ec5242;
+}
+
+#header-content h2 {
+    color: #ec5242;
+    font-family:  'COCOGOOSE', sans-serif;
+    font-size: 28px;
+}
+
+.paragraph-one {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.date {
+    color: #272a31;
+    font-family:  'COCOGOOSE', sans-serif;
+}
+
+.sentence-one {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+#program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272a31 ;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.program-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.gaming {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    background-color: #32363e;
+    margin-bottom: 12px;
+}
+
+.gaming h3 {
+    color: #ec5242;
+}
+
+#program a {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
