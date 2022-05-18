@@ -3,47 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=5;"/>
     <link rel="stylesheet" href="styles.css">
     <title>Gaming Convention</title>
 </head>
 <body>
     <div id="container">
-        <header>
-            <nav id="hamburger-icon">
-                <button id="hamburger-button">
+        <header id="head-section">
+            <nav class="hamburger-icon">
+                <button class="hamburger-button">
                     <span class="h-button"></span>
                     <span class="h-button"></span>
                     <span class="h-button"></span>
                 </button>
             </nav>
-            <nav id="nav-bar-one">
-                <a href="#"><img src="./images/Vector3.png" alt="facebook icon"></a>
-                <a href="#"><img src="./images/Vector2.png" alt="twitter icon"></a>
-                <a href="#">English</a>
-                <a href="#">My Page</a>
-                <a href="#">Logout</a>     
-            </nav>
-            <nav id="nav-bar-two">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </nav>
+            <div class="nav-bars">
+                <nav id="nav-bar-one">
+                    <a href="#"><img src="./images/Vector3.png" alt="facebook icon"></a>
+                 <a href="#"><img src="./images/Vector2.png"   alt="twitter icon"></a>
+                    <a href="#">English</a>
+                    <a href="#">My Page</a>
+                    <a href="#">Logout</a>     
+                </nav>
+                <nav id="nav-bar-two">
+                    <a class="game-con" href="">Gaming convention 2022</a>
+                    <a href="">About</a>
+                    <a href="#program">Program</a>
+                    <a href="">Join</a>
+                    <a href="">Sponsor</a>
+                    <a href="">News</a>
+                    <div class="campaign">
+                    <a href="#">CC Campaign</a>
+                    </div>
+                </nav>
+            </div>
             <section id="header-content">
                 <h1>Welcome All!</h1>
                 <h2>Barbados Gaming Convention 2022</h2>
-                <p class="paragraph-one">Come and enjoy some of the world's best gaming consoles and computer gaming desktops built by our very own, enjoy the light show and play the latest games. Compititions will also be held with amazing prizes.</p>
+                <div class="paragraph">
+                    <p class="paragraph-one">Come and enjoy some of the world's best gaming consoles and computer gaming desktops built by our very own, enjoy the light show and play the latest games. Compititions will also be held with amazing prizes.</p>
+                </div>
                 <div class="date">
                     For Two days, May-14th-2022 until (Sun)May-15th-2022
                 </div>
                 <p class="sentence-one">@ Full Scale Gaming Auditorium</p>
             </section>
         </header>
-        <article id="program">
+        <section id="program">
             <h3>Main Program</h3>
             <div class="program-block">
                 <div class="gaming">
@@ -68,6 +74,19 @@
                 </div>
             </div>
             <a href="#">SEE THE WHOLE PROGRAM</a>
+        </section>
+        <article id="feature">
+            <h3>Featured Speakers</h3>
+            <span class="underline"></span>
+            <!--<div id="speakers">
+                <img src="./images/speaker_02.png" alt="featured speaker one">
+                <div class="descriptions">
+                    <h4>Jeon Gil-nam</h4>
+                    <div class="tech">Emeritus Professor, Korea Advanced Institute of Science and Technology</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis amet ab possimus impedit unde quo perspiciatis in mollitia accusamus?
+                    </p>
+                </div>
+            </div>-->
         </article>
     </div>
     <!--javascript-->

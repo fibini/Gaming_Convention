@@ -2,18 +2,31 @@
 
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
 
-#container {
-    width: fit-content;
-    height: auto;
+* {
+    font-family:'Lato', sans-serif ;
 }
 
-#hamburger-icon {
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: absolute;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger-icon {
     border: none;
 }
 
-#hamburger-button {
+.hamburger-button {
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 .h-button {
@@ -25,10 +38,88 @@
     background-color:black;
 }
 
+.hamburger-button.show .h-button:nth-child(2) {
+    opacity: 0;
+
+}
+
+.hamburger-button.show .h-button:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+
+}
+
+.hamburger-button.show .h-button:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+
+}
+
+.nav-bars{
+    background-image: url(./images/zelda.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    left: -100%;
+    position: fixed;
+    transition: 0.5s;
+}
+
+.nav-bars.show {
+    left: 0;
+}
+
+#nav-bar-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 300px;
+}
+
+#nav-bar-one a {
+    color:#32363e;
+    text-decoration: none;
+}
+
+#nav-bar-two {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+}
+
+.game-con {
+    display: none;
+}
+
+#nav-bar-two a {
+    text-decoration: none;
+    color: #32363e;
+    padding-left: 12px;
+}
+
+#nav-bar-two :hover {
+   color: #ec5242;
+}
+
+.campaign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-style: solid;
+    border-color: #ec5242;
+}
+
+#head-section {
+    background-image: url(./images/playstation-5.jpg);
+    background-size: cover;
+}
+
 #header-content {
     display: flex;
     flex-direction: column;
     padding-left: 12px;
+    padding-right: 12px;
 }
 
 #header-content h1 {
@@ -45,10 +136,17 @@
     font-size: 28px;
 }
 
+.paragraph {
+    border-style: solid;
+    border-color: white;
+
+}
+
 .paragraph-one {
     font-family: 'Lato', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
+    padding-left: 10px;
 }
 
 .date {
@@ -92,5 +190,37 @@
     color: white;
     margin-top: 20px;
     margin-bottom: 32px;
+}
+
+#feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feature h3 {
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 40px;
+    height: 2px;
+    background-color: #ec5242;
+    margin-bottom: 20px;
+}
+
+#speakers {
+    display: flex;
+    gap: 12px;
+    font-family:'Lato', sans-serif ;
+    margin-bottom: 50px;
+}
+
+.descriptions {
+    display: block;
+}
+
+.tech {
+    color: #ec5242;
 }
 
