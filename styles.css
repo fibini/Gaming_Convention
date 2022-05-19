@@ -15,8 +15,7 @@ body {
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 
 .hamburger-icon {
@@ -53,20 +52,23 @@ body {
 
 }
 
-.nav-bars{
+.nav-bars.show{
+    display: block;
     background-image: url(./images/zelda.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    left: -150%;
-    position: fixed;
     transition: 0.5s;
 }
 
-.nav-bars.show {
-    left: 0;
+.nav-bars {
+    display: none;
 }
 
-#nav-bar-one {
+/*.nav-bars.show {
+    visibility:visible;
+}
+
+.nav-bar-one {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,28 +81,28 @@ body {
     text-decoration: none;
 }
 
-#nav-bar-two {
+.nav-bar-two {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     gap: 10px;
-}
+}*/
 
 .game-con {
     display: none;
 }
 
-#nav-bar-two a {
+/*#nav-bar-two a {
     text-decoration: none;
     color: #32363e;
     padding-left: 12px;
-}
+}*/
 
 #nav-bar-two :hover {
    color: #ec5242;
 }
 
-.campaign {
+/*.campaign {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +110,7 @@ body {
     height: 40px;
     border-style: solid;
     border-color: #ec5242;
-}
+}*/
 
 #head-section {
     background-color: #D3D3D3;
@@ -123,6 +125,7 @@ body {
 
 #header-content h1 {
     margin-bottom: 0;
+    margin-top: 50px;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -192,9 +195,9 @@ body {
 }
 
 #feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #feature h3 {
@@ -208,8 +211,23 @@ body {
     margin-bottom: 20px;
 }
 
-#speakers {
+.see-program {
+    background-color: #ec5242;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.see-program a {
+    text-decoration: none;
+}
+
+.speakers {
     display: flex;
+    align-items: center;
     gap: 12px;
     font-family:'Lato', sans-serif ;
     margin-bottom: 50px;
@@ -237,6 +255,10 @@ body {
     text-align: center;
 }
 
+#about-head-section {
+    background-color: #D3D3D3;
+}
+
 #about-header-content h1 {
     color: #ec5242;
 }
@@ -250,6 +272,8 @@ body {
 .about-paragraph {
     border-style: solid;
     border-color: #D3D3D3;
+    width: 50%;
+    background-color: white;
 }
 
 .about-paragraph-one {
@@ -287,6 +311,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top: solid;
+    border-color: #D3D3D3;
+}
+
+.con-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #convention p {
@@ -305,8 +337,6 @@ body {
     background-color: #272a31;
 }
 
-.partner-logo {
-}
 
 .sponsor-logo {
     width: 100px;
@@ -332,6 +362,15 @@ body {
     margin-bottom: 50px;
 }
 
+.about-partners {
+    background-color: #272a31;
+}
+
+.about-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
 /*Desktop version*/
 
 @media only screen and (min-width: 768px) {
@@ -342,36 +381,74 @@ body {
     .nav-bars.show {
         display: none;
     }
-
     .nav-bars {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        left: 0;
-        width: 100%;
-        background-image: none;
-        position: relative;
-
     }
 
-    #nav-bar-one {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
+    .nav-bar-one {
         background-color: #272a31;
     }
 
-    #nav-bar-one a {
+    .nav-bar-one ul{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        color: white;
+        padding: 0;
+        padding-right: 100px;
+    }
+
+    .nav-bar-one a {
+        text-decoration: none;
         color: white;
     }
 
-    #nav-bar-two {
-        width: 100%;
+    .navs-two {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .nav-bar-two {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .nav-bar-two ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-bar-two a {
+        text-decoration: none;
+        color: #32363e;
+    }
+
+    .nav-bar-two :hover {
+        color: #ec5242;
+
+    }
+
+    .campaign {
+        border-style: solid;
+        display: flex;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-color: #ec5242;
+        border-width: 5px;
+    }
+
+    #head-section {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        background-color: white;
-        gap: 10px;
     }
 
     .game-con {
@@ -401,6 +478,80 @@ body {
 
     #header-content {
         padding-left: 10%;
+        background-color: lightgray;
     }
 
+    #feature-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .speakers {
+        display: flex;
+        gap: 10px;
+    }
+
+    .program-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5px;
+    }
+
+    .gaming.one {
+        grid-column: 2;
+    }
+
+    .gaming {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .program-block :hover {
+        border-style: solid;
+        border-color: white;
+    }
+
+    .con-images {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 100px;
+    }
+
+    .about-partners {
+        display: none;
+    }
+
+    .about-footer {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        background-color: #272a31;
+        color: white;
+    }
+
+    #about-header-content h1 {
+        visibility: hidden;
+    }
+
+    #about-header-content {
+        margin-bottom: 100px;
+    }
+
+    .see-program {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .see-program a {
+        text-decoration: underline;
+    }
 }
