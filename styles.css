@@ -60,6 +60,23 @@ body {
     transition: 0.5s;
 }
 
+.nav-bar-one ul {
+    list-style: none;
+}
+
+.nav-bar-two ul {
+    list-style: none;
+}
+
+.nav-bars.show a {
+    text-decoration: none;
+    color: #272a31;
+}
+
+.nav-bars ul :hover {
+    color: #ec5242;
+}
+
 .nav-bars {
     display: none;
 }
@@ -363,6 +380,9 @@ body {
 }
 
 .about-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #272a31;
 }
 
