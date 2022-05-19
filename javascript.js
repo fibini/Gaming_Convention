@@ -1,39 +1,39 @@
 const features = [
   { 
-    name : 'Jeon Gil-nam', 
-    image : './images/speaker_02.png',
+    name : 'Akuma', 
+    image : './images/HD-wallpaper-akuma.jpg',
     technology : `Emeritus Professor, Korea Advanced Institute of Science and Technology`,
     description : `Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis amet ab possimus impedit unde quo perspiciatis in mollitia accusamus?`
   },
   {   
-    name : 'Jeon Gil-nam', 
-    image : './images/speaker_02.png',
+    name : 'Ken Masters', 
+    image : './images/ken.jpg',
     technology : `Emeritus Professor, Korea Advanced Institute of Science and Technology`,
     description : `Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis amet ab possimus impedit unde quo perspiciatis in mollitia accusamus?`
   },
   {   
-    name : 'Jeon Gil-nam', 
-    image : './images/speaker_02.png',
+    name : 'Samus Aran', 
+    image : './images/Samus_Aran.png',
     technology : `Emeritus Professor, Korea Advanced Institute of Science and Technology`,
     description : `Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis amet ab possimus impedit unde quo perspiciatis in mollitia accusamus?`
   },
   {   
-    name : 'Jeon Gil-nam', 
-    image : './images/speaker_02.png',
-    technology : `Emeritus Professor, Korea Advanced Institute of Science and Technology`,
-    description : `Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis amet ab possimus impedit unde quo perspiciatis in mollitia accusamus?`
-
-  },
-  {   
-    name : 'Jeon Gil-nam', 
-    image : './images/speaker_02.png',
+    name : 'Princess Peach', 
+    image : './images/png-transparentpeach.png',
     technology : `Emeritus Professor, Korea Advanced Institute of Science and Technology`,
     description : `Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis amet ab possimus impedit unde quo perspiciatis in mollitia accusamus?`
 
   },
   {   
-    name : 'Jeon Gil-nam', 
-    image : './images/speaker_02.png',
+    name : 'Luigi', 
+    image : './images/Luigi.png',
+    technology : `Emeritus Professor, Korea Advanced Institute of Science and Technology`,
+    description : `Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis amet ab possimus impedit unde quo perspiciatis in mollitia accusamus?`
+
+  },
+  {   
+    name : 'Mario', 
+    image : './images/Mario.png',
     technology : `Emeritus Professor, Korea Advanced Institute of Science and Technology`,
     description : `Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis amet ab possimus impedit unde quo perspiciatis in mollitia accusamus?`
   },
@@ -42,7 +42,7 @@ const features = [
 features.forEach((feature) => {
     const card = `
     <div id="speakers">
-        <img src="${feature.image}" alt="featured speaker one">
+        <img class="speaker-img" src="${feature.image}" alt="featured speaker one">
         <div class="descriptions">
             <h4>${feature.name}</h4>
             <div class="tech">${feature.technology}</div>

@@ -57,7 +57,7 @@ body {
     background-image: url(./images/zelda.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    left: -100%;
+    left: -150%;
     position: fixed;
     transition: 0.5s;
 }
@@ -111,8 +111,7 @@ body {
 }
 
 #head-section {
-    background-image: url(./images/playstation-5.jpg);
-    background-size: cover;
+    background-color: #D3D3D3;
 }
 
 #header-content {
@@ -216,6 +215,11 @@ body {
     margin-bottom: 50px;
 }
 
+.speaker-img {
+    width: 178px;
+    height: 177px;
+}
+
 .descriptions {
     display: block;
 }
@@ -224,3 +228,179 @@ body {
     color: #ec5242;
 }
 
+/*About Page*/
+
+#about-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about-header-content h1 {
+    color: #ec5242;
+}
+
+#about-header-content h2 {
+    color: #ec5242;
+    font-family:  'COCOGOOSE', sans-serif;
+    font-size: 28px;
+}
+
+.about-paragraph {
+    border-style: solid;
+    border-color: #D3D3D3;
+}
+
+.about-paragraph-one {
+    line-height: 30px;
+}
+
+.about-sentence-one {
+    line-height: 30px;
+}
+
+.about-logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-bottom: #D3D3D3;
+}
+
+.about-logo h3 {
+    margin-top: 50px;
+}
+
+.logo {
+   width: 50px;
+}
+
+.logo-border {
+    border-style: solid;
+    border-color: #D3D3D3;
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+#convention {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#convention p {
+    margin-bottom: 50px;
+}
+
+.convention-img {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272a31;
+}
+
+.partner-logo {
+}
+
+.sponsor-logo {
+    width: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-one {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-two {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Desktop version*/
+
+@media only screen and (min-width: 768px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav-bars.show {
+        display: none;
+    }
+
+    .nav-bars {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        left: 0;
+        width: 100%;
+        background-image: none;
+        position: relative;
+
+    }
+
+    #nav-bar-one {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        background-color: #272a31;
+    }
+
+    #nav-bar-one a {
+        color: white;
+    }
+
+    #nav-bar-two {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+        gap: 10px;
+    }
+
+    .game-con {
+        display: contents;
+    }
+
+    #header-content h1 {
+        font-size: 35px;
+    }
+
+    #header-content h2 {
+        font-size: 50px;
+    }
+
+    .bar-game {
+        display: flex;
+        width: 50%;
+    }
+    .paragraph {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    .sentence-one {
+        margin-bottom: 100px;
+    }
+
+    #header-content {
+        padding-left: 10%;
+    }
+
+}
