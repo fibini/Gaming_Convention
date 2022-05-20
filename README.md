@@ -12,7 +12,7 @@ A Website that introduces a game convention about to be held in my country
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]
 
 
 ## Getting Started
@@ -35,6 +35,7 @@ clone the repository to your local machine through your code editor using git cl
 ### Run tests
 
 ### Deployment
+https://fibini.github.io/Gaming_Convention/
 
 
 
